@@ -1,0 +1,20 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: pausecut-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/app/db:/app/app/db
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: pausecut-frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    restart: unless-stopped

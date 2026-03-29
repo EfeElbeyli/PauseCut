@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pydantic
+yt-dlp
+scenedetect[opencv]
+opencv-python-headless
+numpy
+webrtcvad
+librosa
