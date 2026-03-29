@@ -68,6 +68,7 @@ cd pausecut
 ```bash
 cd backend
 pip install -r requirements.txt
+cd app
 python main.py
 ```
 
@@ -95,8 +96,6 @@ Frontend will run at:
 
 Go to:
 👉 http://localhost:3000
-
-Paste a video link and start analyzing 🚀
 
 ## 🐳 Run with Docker (optional)
 
