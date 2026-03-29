@@ -52,16 +52,55 @@ PauseCut provides a professional editing environment:
 
 ## 🚀 Getting Started
 
+## ⚙️ Local Setup
+
+### 1. Clone the repository
+
 ```bash
 git clone https://github.com/EfeElbeyli/pausecut.git
 cd pausecut
+```
 
-# backend
+---
+
+### 2. Backend setup (FastAPI)
+
+```bash
 cd backend
 pip install -r requirements.txt
 python main.py
+```
 
-# frontend
-cd ../frontend
+Backend will run at:
+👉 http://localhost:8000
+
+---
+
+### 3. Frontend setup (Next.js)
+
+Open a new terminal:
+
+```bash
+cd frontend
 npm install
 npm run dev
+```
+
+Frontend will run at:
+👉 http://localhost:3000
+
+---
+
+### 4. Open the app
+
+Go to:
+👉 http://localhost:3000
+
+Paste a video link and start analyzing 🚀
+
+## 🐳 Run with Docker (optional)
+
+```bash
+docker-compose up --build
+```
+
